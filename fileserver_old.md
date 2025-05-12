@@ -3,7 +3,13 @@
 1. 建立資料夾 `file-server`
 2. 在資料夾內建立資料夾 `file`、`ssl`
 3. 在 `file-server` 中建立檔案 `default.conf`、`docker-compose.yaml`
-4. 在 `file-server` 資料夾中建立憑證 `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout file-server/ssl/cert.key -out file-server/ssl/cert.crt`
+4. 在 `file-server` 資料夾中建立憑證
+```
+mkdir -p certs
+openssl req -x509 -newkey rsa:2048 -nodes \
+  -keyout certs/key.key -out certs/cert.pem \
+  -days 365 -subj "/CN=localhost"
+```
 5. `docker compose up -d`
 6. https://ip:8080
 
