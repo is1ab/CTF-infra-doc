@@ -60,7 +60,7 @@ services:
       - "GZCTF_ADMIN_PASSWORD=這裡要修改"
       - "LC_ALL=zh_TW.UTF-8"
     ports:
-      - "8088:8080" //這裡可以修改
+      - "8080:8080" //這裡可以修改
     volumes:
       - "./data/files:/app/files"
       - "./appsettings.json:/app/appsettings.json:ro"
