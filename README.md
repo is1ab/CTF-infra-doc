@@ -5,6 +5,7 @@
 1. docker
 2. docker compose
 3. k3s
+4. docker registry
 
 ## 平台介紹
 - 新生盃使用平台(比賽用): GZCTF
@@ -18,6 +19,8 @@
     - CTFd 80/443
     - zipline 3000/3443
 4. 安裝 nginx，建立 https
+5. 建立 docker registry
+    - `docker run -d -p 5000:5000 --restart always --name registry registry:2`
 
 ## 額外管理工具
 - 管理 Docker: portainer.io
