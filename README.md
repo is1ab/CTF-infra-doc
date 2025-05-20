@@ -9,8 +9,11 @@
 
 ## 平台介紹
 - 新生盃使用平台(比賽用): GZCTF
+    - gzctf.is1ab.com
 - 日常使用平台(練習/上課用): CTFd
+    - ctfd.is1ab.com
 - 檔案伺服器: zipline
+    - ctf-file.is1ab.com
 
 ## 建置步驟
 1. 安裝 docker、k3s
